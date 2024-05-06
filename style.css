@@ -1,0 +1,275 @@
+*{
+  box-sizing: border-box;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#title{
+  height: fit-content;
+}
+
+.title-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 100px;
+}
+.title-btn1{
+  padding: 10px 20px;
+  color: #000;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.title-btn2{
+  padding: 10px 20px;
+  color: #fff;
+  background-color: transparent;
+  font-size: 17px;
+}
+
+.fa-brands{
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+
+.title-left h1{
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: 900;
+  font-size: 30px;
+  width: 50%;
+}
+
+
+
+.title-right-image{
+  padding: 0 100px;
+}
+
+.title-right-image img{
+  z-index: -1;
+}
+
+#title div ul li a{
+  color: #fff;
+  font-size: 17px;
+  
+}
+.collapse{
+  padding-top: 22px;
+  margin-left: 95px;
+  
+}
+
+#title div ul li a span:hover{
+  color: #1c1b1b;
+  font-size: 17px;
+  transform: translate(50%);/
+}
+
+
+
+/* ------------------------------------features-------------------------------------- */
+
+.content-container{
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content{
+  margin: 0 20px;
+  flex-basis: 30%;
+  display: flex;
+  height: 250px;
+  background-color: #f3f2f2;
+  border-radius: 15px;
+  padding: 50px;
+  
+}
+
+.details-content{
+  margin-left: 10px;
+}
+
+.icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.icon .f{
+  font-size: 50px;
+  margin : 0 15px;
+}
+
+/* ----------------------------------------testimonial-------------------------------------------------- */
+
+
+.carousel-item img{
+  border-radius: 20px;
+}
+
+#testimonial{
+  background: #f3f2f2;
+  padding: 30px 0;
+
+}
+
+/* ----------------------------------------Pricing-------------------------------------------------- */
+
+.card-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.pricing-info{
+  text-align: center;
+  margin: 50px 0;
+}
+
+.pricing-info p{
+  color: #636363;
+  font-size: 17px;
+}
+
+.card-title{
+  text-align: center;
+  font-weight: lighter;
+  background-color: #efefef;
+  padding: 10px 20px;
+  border-radius: 5px;
+
+}
+.card{
+  /* display: flex;
+  align-items: center;
+  justify-content: space-around; */
+}
+
+
+
+.card-body ul{
+  padding: 0;
+}
+
+.card-body {
+  width: 100%;
+}
+.card-body ul li{
+  text-align: center;
+  padding: 0;
+}
+
+.card-body h3{
+  text-align: center;
+  margin: 30px 0;
+}
+
+.card-body .btn{
+  margin-top: 30px;
+  padding: 15px 40px;
+}
+
+.pricing-content{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#footer{
+  
+}
+
+.footer-pic{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+
+
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 600px){
+  .content-container{
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+  .content{
+    margin: 0 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .card-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title-content{
+    flex-direction: column;
+  }
+  .title-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title-left h1{
+    margin-bottom: 30px;
+  }
+
+  .title-left .btn{
+    margin-bottom: 30px;
+    /* height: 50px; */
+  }
+  
+  .title-right{
+    order: 2;
+  }
+
+  .content-container{
+    margin: 0 10px;
+  }
+}
+/* .icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+} */
